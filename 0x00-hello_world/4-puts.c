@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main
+int main(void)
 /*
  * main: serves as the entry point for the program
  */

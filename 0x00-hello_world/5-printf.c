@@ -2,10 +2,10 @@
 /**
  *main - entry point for this program
  **
-  * Return value - by default is 0 (success)
+  * Return:0 if successful with no errors, return non zero if errors
  */
 int main(void)
 {
-	printf("%d\n", with proper grammar, but the outcome is a piece of art);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 		return (0);
 }

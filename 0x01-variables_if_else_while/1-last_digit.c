@@ -21,11 +21,11 @@ int main(void)
 		n = rand() - RAND_MAX / 2;
 		/* your code goes there */
 		if (n > 5)
-			printf("Last digit of" n, "and is greater than 5\n");
+			printf(("Last digit of") n, "and is greater than 5\n");
 		if (n == 0)
-			printf("Last digit of" n, "and is zero\n");
+			printf(("Last digit of") n, "and is zero\n");
 		if (n < 6 && != 0)
-			printf("Last digit of" n, "and is less than 6 and not
+			printf(("Last digit of") n, "and is less than 6 and not
 			0\n");
 		return (0);
 

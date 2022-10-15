@@ -7,11 +7,10 @@
 int main(void)
 {
 	int ch;
-	int be;
 
 	for (ch = 'a'; ch = 'z'; ch++)
-	for (be = 'A'; be = 'Z'; be++)
 		putchar(ch);
-		putchar(be);
+	for (ch = 'A'; ch = 'Z'; ch++)
+		putchar(ch);
 	putchar('\n');
 	return (0);

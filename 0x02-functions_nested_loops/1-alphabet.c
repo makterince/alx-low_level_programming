@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *main - function prototype
- * Return:0 success
+ *print_alphabet - prints lowercase of alphabet
  */
-int main(void)
+
+void print_alphabet(void)
 {
 	int num;
 
@@ -12,6 +12,5 @@ int main(void)
 		_putchar(num);
 	}
 	_putchar('\n');
-	return (0);
 }
 

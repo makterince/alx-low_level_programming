@@ -1,17 +1,11 @@
 #include <stdio.h>
-#include <main.h>
+#include <conio.h>
 /**
  * main - entry point
  * Return:0 success
  */
-
 int main(void)
 {
-	char word;
-
-	word = "_putchar";
-	printf("%s", word);
-	putchar('\n')
-
-		return (0);
+	printf("_putchar")
+	return (0);
 }

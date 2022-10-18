@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <conio.h>
+#include "main.h"
 /**
  * main - entry point
  * Return:0 success

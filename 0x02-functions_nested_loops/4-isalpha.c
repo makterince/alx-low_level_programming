@@ -7,5 +7,5 @@
 
 int _isalpha(int c)
 {
-	return (c = 'a-z' && c = 'A-Z');
+	return (c = 'a'...'z' && c = 'A'...'Z');
 }

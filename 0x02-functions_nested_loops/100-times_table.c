@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *print_times_table - runs a times table for n
  *@n: given interger

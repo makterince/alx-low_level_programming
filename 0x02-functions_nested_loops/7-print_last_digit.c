@@ -1,4 +1,4 @@
-#include "math.h"
+#include "main.h"
 /**
  *print_last_digit - prints last digit of int
  *Return: k the value of last digit

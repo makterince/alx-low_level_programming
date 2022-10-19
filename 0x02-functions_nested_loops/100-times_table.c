@@ -7,15 +7,38 @@
  */
 void print_times_table(int n)
 {
-	int i, j;
+	int i, j, k;
 
-	for (i = 0; i <= n; i++)
+	if (n >= 0 && n <= 15)
 	{
-		for (j = 0; j <= n; j++)
+		for (i = 0; i <= n; i++)
 		{
-			printf("%4d, ", i * j);
-			printf(" ");
+			_putchar(48);
+			for (j = 1; j <= n; j++)
+			{
+				k = i * j;
+				_putchar(44);
+				_putchar(32);
+				if (k <= 9)
+				{
+					_putchar(32);
+					_putchar(32);
+					_putchar(k + 48);
+				}
+				else if (k <= 99)
+				{
+					_putchar(32);
+					_putchar((op / 10) + 48);
+					_putchar((op % 10) + 48);
+				}
+				else
+				{
+					_putchar(((op / 100) % 10) + 48);
+					_putchar(((op / 10) % 10) + 48);
+					_putchar((op % 10) + 48);
+				}
+			}
+			_putchar('\n');
 		}
-		printf("\n");
 	}
 }

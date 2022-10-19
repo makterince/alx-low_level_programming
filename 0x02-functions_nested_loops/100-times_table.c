@@ -3,7 +3,7 @@
 /**
  *print_times_table - runs a times table for n
  *@n: given interger
- *Return:0 success
+ *
  */
 void print_times_table(int n)
 {
@@ -22,5 +22,4 @@ void print_times_table(int n)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }

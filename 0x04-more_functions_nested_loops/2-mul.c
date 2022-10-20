@@ -4,10 +4,10 @@
  *@a: integer 1
  *@b: integer 2
  *Return: the product
- *@p: checks and multiplies
  */
-int mul(int a, int b, p)
+int mul(int a, int b)
 {
-	p = a * b
+	int p = a * b;
+
 	return (p);
 }

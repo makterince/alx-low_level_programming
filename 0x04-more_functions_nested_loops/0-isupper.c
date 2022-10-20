@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 /**
  * _isupper - checks if c is upper case
  *@c: integer

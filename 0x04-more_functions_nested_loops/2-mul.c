@@ -4,9 +4,10 @@
  *@a: integer 1
  *@b: integer 2
  *Return: the product
- *@prod: checks and multiplies
+ *@p: checks and multiplies
  */
-int mul(int a, int b, prod)
+int mul(int a, int b, p)
 {
-	prod = int a * int b
+	p = int a * int b
+	_putchar(p);
 }

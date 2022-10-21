@@ -7,7 +7,7 @@
  */
 void more_numbers(void)
 {
-	int a, b;
+	int a, b, c;
 
 	for (b = 48; b <= 57; b++)
 	{

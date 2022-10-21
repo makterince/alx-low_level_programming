@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *more_numbers - prints 1 to 14 in 10 rows
  *

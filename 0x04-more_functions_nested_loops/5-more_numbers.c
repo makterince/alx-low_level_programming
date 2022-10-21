@@ -9,6 +9,8 @@ void more_numbers(void)
 {
 	int a, b, c;
 
+	c = 48;
+
 	for (b = 48; b <= 57; b++)
 	{
 		for (a = 48; a <= 63; a++)

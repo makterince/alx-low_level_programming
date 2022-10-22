@@ -11,7 +11,7 @@ void more_numbers(void)
 
 	c = 48;
 
-	for (a = 48; a <= 57; a++)
+	for (a = 48; a < 58; a++)
 	{
 		for (b = 48; b <= 63; b++)
 		{
@@ -25,6 +25,7 @@ void more_numbers(void)
 			_putchar(c);
 			c++;
 		}
+
 		k = 48;
 
 		_putchar('\n');

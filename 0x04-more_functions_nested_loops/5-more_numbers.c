@@ -11,19 +11,19 @@ void more_numbers(void)
 
 	c = 48;
 
-	for (a = 48; a < 58; a++)
+	for (a = 0; a < 10; a++)
 	{
 		for (b = 48; b <= 63; b++)
 		{
 			if (b > 57)
 			{
-				_putchar(48);
+				_putchar(49);
 
 				if (c == 58)
 					c = 48;
 			}
 			_putchar(c);
-			c++;
+			c = k + 1;
 		}
 
 		k = 48;

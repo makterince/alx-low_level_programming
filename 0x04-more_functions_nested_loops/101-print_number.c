@@ -1,4 +1,4 @@
-#include "main.h"
+#include "miain.h"
 /**
  * print_number - prints integers
  * @n: int value

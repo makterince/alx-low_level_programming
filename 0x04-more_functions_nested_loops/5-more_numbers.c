@@ -23,10 +23,10 @@ void more_numbers(void)
 					c = 48;
 			}
 			_putchar(c);
-			c = k + 1;
+			c = c + 1;
 		}
 
-		k = 48;
+		c = 48;
 
 		_putchar('\n');
 	}

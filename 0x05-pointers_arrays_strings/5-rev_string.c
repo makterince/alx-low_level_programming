@@ -7,13 +7,23 @@
  */
 void rev_string(char *s)
 {
-	if (*s != '\0')
+	int count = 0, i, j;
+	char *str, temp;
+
+	while (count >= 0)
 	{
-		print_rev(s + 1);
-		_putchar(*s);
+		if (s[count] == '\0')
+			break;
+		count++
 	}
-	else
+	str = s;
+	for (i = 0; i < (count - 1); i++)
 	{
-		_putchar('\n');
+		for (j = i + 1; j > 0; j--)
+		{
+			temp = *(str + j);
+			(str + j) = (str + (j - 1));
+			*(str + (j - 1)) = temp;
+		}
 	}
 }

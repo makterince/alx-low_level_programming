@@ -7,6 +7,6 @@
 
 void reset_to_98(int *n)
 {
-	printf("Value of 'n': %lu\n", n);
+	printf("Value of 'n': %p\n", n);
 	*n = 98;
 }

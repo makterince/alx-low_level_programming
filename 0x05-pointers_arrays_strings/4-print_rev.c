@@ -10,6 +10,7 @@ void print_rev(char *s)
 {
 	int len = _strlen(s);
 	int mid = len / 2;
+	int i;
 	char temp;
 
 	for (i = 0; i < mid; i++)

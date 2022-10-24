@@ -14,9 +14,10 @@ void rev_string(char *s)
 	{
 		if (s[count] == '\0')
 			break;
-		count++
+		count++;
 	}
 	str = s;
+
 	for (i = 0; i < (count - 1); i++)
 	{
 		for (j = i + 1; j > 0; j--)

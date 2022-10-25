@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <time.h>
+#include <stdlib.h>
 /**
  *main - generates keygen
  *Return: 0 always

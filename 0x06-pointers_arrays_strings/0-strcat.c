@@ -8,6 +8,14 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	_strcat(s1, s2);
-	_putchar(s1);
+	int i, j;
+
+	for (i = 0; s1[i] != '\0'; i++)
+	{
+		for (j = 0; s2[j] != '\0'; j++, i++)
+		{
+			s1[i] = s2[j];
+		}
+		s1[i] = '\0';
+	}
 }

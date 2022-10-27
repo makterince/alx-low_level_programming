@@ -1,5 +1,5 @@
 #include "main.h"
-#include <studio.h>
+
 /**
  *_strcat - concatenates 2 string
  *@dest: destination string

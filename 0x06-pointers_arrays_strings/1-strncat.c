@@ -1,7 +1,6 @@
-#include <stdio.h>
 #include "main.h"
 /**
- *_strncat - concatenates two string with an n amount of character from src
+ *_strncat - concatenates files in respect to 2 strings of n
  *@dest: parameter
  *@src: parameter
  *@n: parameter
@@ -10,7 +9,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int i;
-	int j;i
+	int j;
 
 	i = 0;
 	while (dest[i] != '\0')
@@ -21,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 	j = 0;
 	while (j < n && src[j] != '\0')
 	{
-		dest[i] = src[j];
+		dest[i] = src[i];
 		i++;
 		j++;
 	}

@@ -3,7 +3,7 @@
 /**
  *string_toupper - change low case to upper case
  *@s: parameter
- *Return: 0
+ *Return: n
  */
 char *string_toupper(char *s)
 {
@@ -14,5 +14,5 @@ char *string_toupper(char *s)
 		if (s[i] >= 'a' && s[i] <= 'z')
 			s[i] = s[i] - 32;
 	}
-	return (0);
+	return (n);
 }

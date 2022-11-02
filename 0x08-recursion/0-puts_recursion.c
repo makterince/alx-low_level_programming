@@ -2,14 +2,13 @@
 /**
  *_puts_recursion - prints out a string
  *@s: parameter
- *Return: s
+ *Return: 0
  *
  */
 void _puts_recursion(char *s)
 {
-	int i;
 
-	_putchar(i);
+	_putchar(s);
 	_putchar('\n');
-	return (s);
+	return (0);
 }

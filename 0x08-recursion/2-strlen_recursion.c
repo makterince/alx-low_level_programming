@@ -2,7 +2,7 @@
 /**
  *_strlen_recursion - returns the length of a string
  *@s: parameter
-Return: len*
+ *Return: len*
  *
  */
 int _strlen_recursion(char *s)
@@ -18,5 +18,5 @@ int _strlen_recursion(char *s)
 	}
 	else
 		return (len);
-
 }
+

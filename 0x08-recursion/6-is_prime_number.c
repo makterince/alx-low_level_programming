@@ -1,4 +1,6 @@
 #include "main.h"
+
+int check_if_prime(int, int);
 /**
  *is_prime_number - prints 1 if prime and 0 other wise returns 0
  *@n: parameter
@@ -7,21 +9,23 @@
  */
 int is_prime_number(int n)
 {
-	int i;
+	return (check_if_prime(n, 1));
+}
 
-	if (i == 1)
-	{
+/**
+ *check_if_prime - checks if n is prime
+ *@n: parameter
+ *@i: parameter
+ *Return: 1
+ */
+int check_if_prime(int n, int i)
+{
+
+	if (n <= 1)
+		return (0);
+	if (n % i == 0 && n > 1)
+		return (0);
+	if ((n / i) < i)
 		return (1);
-	}
-	else
-	{
-		if (n % 1 == 0)
-		{
-			return (0);
-		}
-		else
-		{
-			return (is_prime_number(n, i - 1));
-		}
-	}
+	return (check_if_prime(n, i + 1));
 }

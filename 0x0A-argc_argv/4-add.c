@@ -10,18 +10,18 @@ int main(int argc, char *argv[])
 {
 	int i, add, j, k, sum;
 
-	if (argc == 1)
-		printf("\0");
-
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (argv[i][j] > '9' || argv[i][j] < '0')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 	}
-	for (k = 0; k < argc; k++)
+	for (k = 1; k < argc; k++)
 	{
 		add = atoi(argv[k]);
 		sum = sum + add;

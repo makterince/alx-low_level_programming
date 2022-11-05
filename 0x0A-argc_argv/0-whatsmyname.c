@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  *main - prints out the program names when it runs

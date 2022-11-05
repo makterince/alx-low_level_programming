@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  *main - prints multiplication of numbers
@@ -8,18 +9,17 @@
 int main(int argc, char *argv[])
 {
 	int i, mul;
-	if (argc > 1)
+
+	if (argc == 1)
 	{
-		for (i = 0; i < argc; i++)
-		{
-			printf("%d\n", argv[i]);
-			mul *= argv[i];
-		}
-		printf("%d\n", sum)
+		i = atoi(argv[1]);
+		mul = atoi(argv[2])
+		printf("%d\n",i * mul);
+		return (0);
 	}
 	else
 	{
-		printf("Error %s\n");
+		printf("Error\n");
 		Return (1);
 	}
 }

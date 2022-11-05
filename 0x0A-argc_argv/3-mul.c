@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int i, mul;
 
-	if (argc == 1)
+	if (argc ==3)
 	{
 		i = atoi(argv[1]);
 		mul = atoi(argv[2])

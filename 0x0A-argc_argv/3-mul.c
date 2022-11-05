@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
 /**
  *main - prints multiplication of numbers
  *@argc: parameter
@@ -8,13 +8,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, mul;
+	int i, j, mul;
 
 	if (argc == 3)
 	{
 		i = atoi(argv[1]);
-		mul = atoi(argv[2])
-		printf("%d\n", i * mul);
+		j = atoi(argv[2]);
+		mul = i * j;
+
+		printf("%d\n", mul);
 		return (0);
 	}
 	else

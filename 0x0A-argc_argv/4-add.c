@@ -8,26 +8,24 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, add;
+	int i, add, j, k, sum;
 
-	if (argc > 1)
+	if (argc == 1)
+		printf("\0");
+
+	for (i = 0; i < argc; i++)
 	{
-		for (i = 0; i < argc; i++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i] >= 48 && argv[i] <= 57)
-			{
-				add += argv[i];
-				printf("%d\n", add);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
+			printf("Error\n");
+			return (1);
 		}
 	}
-	else if (argc < 1)
+	for (k = 0; k < argc; k++)
 	{
-		printf("0\n");
+		add = atoi(argv[k]);
+		sum = sum + add;
 	}
+	printf("%d\n", sum);
+	return (0);
 }

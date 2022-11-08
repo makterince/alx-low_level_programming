@@ -60,13 +60,13 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 
 	size = (_strlen(s1) + _strlen(s2) + 1);
-	p = (char *) malloc(size * (char));
+	p = (char *) malloc(size * sizeof(char));
 	if (p == 0)
 	{
 		return (NULL);
 	}
-	_strcat(s1, s2) = p;
 
+	p =_ strcat(s1,2);
 	return (p);
 }
 

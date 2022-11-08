@@ -74,7 +74,7 @@ char *_strdup(char *str)
 	/**
 	 * allocate memory for p
 	 */
-	p = (char *)malloc(size * sizeof(char));
+	p = (char *) malloc(size * sizeof(char));
 	/**
 	 * return null for insufficient memory orif it fails
 	 */

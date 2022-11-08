@@ -67,7 +67,7 @@ char *_strdup(char *str)
 	/**
 	 * Returns NULL if str = NULL
 	 */
-	if (str == 0)
+	if (str == NULL)
 	{
 		return (NULL);
 	}

@@ -23,6 +23,9 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
+	/**
+	 * if it fails, return null
+	 */
 	else
 	{
 		for (i = 0; i < size; i++)
@@ -31,5 +34,8 @@ char *create_array(unsigned int size, char c)
 		}
 		return (p);
 	}
+	/**
+	 *if it succeeds return pointer to array
+	 */
 
 }

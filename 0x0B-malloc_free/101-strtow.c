@@ -50,7 +50,7 @@ int wordcount_(char *str)
  */
 char **strtow(char *str)
 {
-	char *p;
+	char **p;
 	int i = 0, j, k, l, m;
 
 	if (str == '\0' || str[0] == '\0')

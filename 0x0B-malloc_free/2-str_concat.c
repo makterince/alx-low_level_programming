@@ -51,7 +51,7 @@ int _strlen(char *s)
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *p;
+	char *p, k;
 	unsigned int size;
 
 	p = (char *) malloc(size * (char));
@@ -60,7 +60,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (k == NULL)
 	{
-		_putchar('');
+		return (NULL);
 	}
 	if (p == 0)
 	{

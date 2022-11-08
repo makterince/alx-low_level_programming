@@ -51,23 +51,22 @@ int _strlen(char *s)
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *p, k;
+	char *p;
 	unsigned int size;
 
-	p = (char *) malloc(size * (char));
-	size = _strlen(k) + 1;
-	k = _strcat(s1, s2);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	if (k == NULL)
-	{
-		return (NULL);
-	}
+	size = (_strlen(s1) + _strlen(s2) + 1);
+	p = (char *) malloc(size * (char));
 	if (p == 0)
 	{
-		return (0);
-	}
-	else
-	{
 		return (NULL);
 	}
+	_strcat(s1, s2) = p;
+
+	return (p);
 }
+

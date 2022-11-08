@@ -67,7 +67,7 @@ char *_strdup(char *str)
 	/**
 	 * Returns NULL if str = NULL
 	 */
-	if (str == '\0')
+	if (str == 0)
 	{
 		return (NULL);
 	}
@@ -78,7 +78,7 @@ char *_strdup(char *str)
 	/**
 	 * return null for insufficient memory orif it fails
 	 */
-	if (p == '\0')
+	if (p == 0)
 	{
 		return (NULL);
 	}

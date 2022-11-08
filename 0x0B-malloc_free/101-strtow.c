@@ -53,7 +53,7 @@ char **strtow(char *str)
 	char **p;
 	int i = 0, j, k, l, m;
 
-	if (str == '\0' || str[0] == '\0')
+	if (str == NULL || str[0] == '\0')
 		return (NULL);
 	j = wordcount_(str);
 	if (j == 0)

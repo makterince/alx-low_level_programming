@@ -63,7 +63,7 @@ char *_strdup(char *str)
 	/**
 	 * to get the length of str
 	 */
-	size = _strlen(str);
+	size = _strlen(str) + 1;
 	/**
 	 * Returns NULL if str = NULL
 	 */
@@ -74,7 +74,7 @@ char *_strdup(char *str)
 	/**
 	 * allocate memory for p
 	 */
-	p = (char *) malloc(size *sizeof(char));
+	p = (char *) malloc(size * sizeof(char));
 	/**
 	 * return null for insufficient memory orif it fails
 	 */

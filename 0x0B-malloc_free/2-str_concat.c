@@ -65,7 +65,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	p = _strcat(s1, s2)
+	p = _strcat(s1, s2);
 	return (p);
 }
 

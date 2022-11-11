@@ -1,44 +1,23 @@
 #include "main.h"
 /**
- *argstostr - concats all arguments passed
- *@ac: parameter
- *@av: parameter
- *Return: p
+ *_realloc - reallocates a memory block.
+ *@ptr: pointer to the memory
+ *@old_size: size of ptr.
+ *@new_size: new size of the new memory block.
+ *Return: ptr.
  */
-char *argstostr(int ac, char **av)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	int i = 0, j = 0, k = 0, l = 0;
-	char *p;
-
-	if (ac == 0 || av == 0)
+	if (new_size == 0 && ptr != NULL)
 	{
+		free(ptr);
 		return (NULL);
 	}
-	while (i < ac)
-	{
-		j = 0;
-		while (av[i][j] != '\0')
-		{
-			k++;
-			j++;
-		}
-		i++;
-	}
-	k = k + ac + 1;
-	p = malloc(sizeof(char) * k);
-	if (p == NULL)
-	{
-		return (NULL);
-	}
-	for (i = 0; i < ac; i++)
-	{
-		for (j = 0; av[i][j] != '\0'; j++)
-		{
-			p[l] = av[i][j];
-			l++;
-		}
-		p[l] = '\n';
-		l++;
-	}
-	return (p);
+	if (ptr == NULL)
+		ptr = malloc(new_size);
+	if (new_size == old_size)
+		return (ptr);
+	free(ptr);
+	ptr = malloc(new_size);
+	return (ptr);
 }

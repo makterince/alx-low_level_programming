@@ -2,10 +2,17 @@
 #define DOG_H
 
 #include <stdio.h>
-
-typedef struct dog {
+/**
+ * struct dog - for dog
+ * @name: parameter
+ * @age: parameter
+ * @owner: parameter
+ */
+typedef struct dog
+{
 	char *name;
 	float age;
 	char *owner;
-}
+};
+
 #endif

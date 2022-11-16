@@ -2,7 +2,7 @@
 /**
  *get_op_func - selects right function
  *@s: parameter
- *Retrun: pointer to the corresponding function
+ *Return: pointer to the corresponding function
  *
  *
  */
@@ -22,8 +22,8 @@ int (*get_op_func(char *s))(int, int)
 	while (ops[i].op)
 	{
 		if (strcmp(ops[i].op, s) == 0)
-		       return (ops[i].f);
+			return (ops[i].f);
 		i++;
 	}
-	return (NULL);	
+	return (NULL);
 }

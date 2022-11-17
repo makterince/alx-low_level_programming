@@ -29,13 +29,13 @@ void print_all(const char * const format, ...)
 			case 'c':
 				printf("%c", va_arg(args, int)), k = 1;
 				break;
-			case 'j':
+			case 'i':
 				printf("%d", va_arg(args, int)), k = 1;
 				break;
 			case 'f':
 				printf("%f", va_arg(args, double)), k = 1;
 				break;
-			case 'g':
+			case 's':
 				p = va_arg(args, char *), k = 1;
 				if (!p)
 				{

@@ -1,11 +1,12 @@
 #include "lists.h"
-void __attribute__((constructor)) tortoise(void);
+#include <stdio.h>
+void __attribute__((constructor)) tortoise_brags(void);
 /**
- *tortoise - prints a sentence
+ *tortoise_brags - prints a sentence
  *
  */
-void tortoise(void)
+void tortoise_brags(void)
 {
-	printf("You're beat! and yet, you must allow,"
-			"\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n"
+			"I bore my house upon my back!\n");
 }

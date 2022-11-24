@@ -3,14 +3,14 @@
  *add_node_end - adds a node to the end of link
  *@head: pointer to pointer to head
  *@str: string parameter
- *Return: new node
+ *Return: head
  *
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	struct list_t *new_node, *current;
-	unsigned int length;
 	char *cpy;
+	list_t *new_node, *current;
+	int length;
 
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
@@ -30,11 +30,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_node->len = length;
 	new_node->next = NULL;
 
-	*current = *head;
 	if (*head == NULL)
-		*head = *new_node;
+		*head = new_node;
 	else
 	{
+		current = *head;
 		while (current->next != NULL)
 		{
 			current = current->next;

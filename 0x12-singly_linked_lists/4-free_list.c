@@ -7,7 +7,7 @@
  */
 void free_list(list_t *head)
 {
-	struct list_t = temp;
+	struct list_t  *temp;
 
 	while (head != NULL)
 	{

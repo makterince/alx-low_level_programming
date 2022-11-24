@@ -7,8 +7,13 @@
  */
 void free_list(list_t *head)
 {
-	struct list_t;
+	struct list_t = temp;
 
-	free(list_t);
-	return (98);
+	while (head != NULL)
+	{
+		temp = head->next;
+		free(head->str);
+		free(head);
+		head = temp;
+	}
 }

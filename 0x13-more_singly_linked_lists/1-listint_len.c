@@ -1,10 +1,16 @@
 #include "lists.h"
 /**
- *add_nodeint - adds a node at the beginning
- *@n: parameter
+ *listint_len - returns number of element in a link
  *Return: temp address or null
- *
+ *@h: head
  */
-listint_t *add_nodeint(listint_t **head, const int n)
+size_t listint_len(const listint_t *h)
 {
-	
+	size_t count;
+
+	for (count = 0; h != NULL; count++)
+	{
+		h = h->next;
+	}
+	return (count);
+}

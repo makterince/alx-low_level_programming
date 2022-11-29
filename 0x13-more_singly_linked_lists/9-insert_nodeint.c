@@ -8,15 +8,15 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *anywhere = *head;
-	listint_t *drop;
+	listint_t *anywhere;
+	listint_t *drop = *head;
 	unsigned int i;
 
 	anywhere = malloc(sizeof(listint_t));
 	if (anywhere == NULL)
 		return (NULL);
 	anywhere->n = n;
-	
+
 	if (idx < 1)
 		return (NULL);
 	if (idx == 0)

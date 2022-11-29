@@ -2,21 +2,23 @@
 /**
  *pop_listint - deletes the head node and returns its data
  *@head: head pointer to head 
- *Return: fjn
+ *Return: 0 if head node is empty or return data
  *
  */
 int pop_listint(listint_t **head)
 {
 	listint_t *tdel;
+	int data;
 
 	if (*head == NULL)
 		return (0);
 	else
 	{
 		tdel = (*head);
-		tdel = (*head)->next;
+		data = (*head)->n;
+		*head = (*head)->next;
 		free(tdel);
 	}
-	return (0);
+	return (data);
 }
 		

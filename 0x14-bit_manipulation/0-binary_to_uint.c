@@ -11,9 +11,9 @@ unsigned int binary_to_uint(const char *b)
 	int bin;
 	unsigned int value;
 
-	if (b == '\0')
+	if (b == NULL)
 		return (0);
-	if (b != '\0')
+	if (b != NULL)
 	{
 		for (bin = 1; b[bin] != '\0'; bin++)
 		{

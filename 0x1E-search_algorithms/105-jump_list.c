@@ -1,4 +1,5 @@
 #include "search_algos.h"
+#include <math.h>
 /**
  *min_ - finds the smallest between two numbers
  *@a: the first num

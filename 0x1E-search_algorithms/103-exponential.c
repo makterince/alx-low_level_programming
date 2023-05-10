@@ -28,7 +28,7 @@ int b_search(int *array, size_t start, size_t end, int value)
 
 	if (start > end)
 		return (-1);
-	
+
 	printf("Searching in array: ");
 	for (i = start; i <= end; i++)
 	{
@@ -38,7 +38,7 @@ int b_search(int *array, size_t start, size_t end, int value)
 	}
 	printf("\n");
 	num = array[mid];
-	
+
 	if (num == value)
 		return (mid);
 	else if (num > value)
